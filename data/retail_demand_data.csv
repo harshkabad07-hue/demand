@@ -1,0 +1,901 @@
+product_id,category,price,past_sales,season,discount,demand
+P1000,Groceries,430.43,127.0,winter,4,99.99
+P1001,Beauty,71.03,136.0,festival,22,152.2
+P1002,Clothing,119.8,134.0,winter,4,121.7
+P1003,Home Decor,182.43,24.0,festival,49,118.37
+P1004,Clothing,83.91,82.0,summer,37,124.86
+P1005,Beauty,239.02,130.0,winter,9,109.05
+P1006,Home Decor,417.68,112.0,winter,32,109.94
+P1007,Beauty,,49.0,winter,34,98.15
+P1008,Beauty,354.94,129.0,festival,14,123.66
+P1009,Beauty,336.85,109.0,summer,24,107.2
+P1010,Home Decor,157.54,95.0,winter,30,121.16
+P1011,Groceries,123.1,134.0,festival,2,147.46
+P1012,Groceries,334.84,95.0,festival,20,132.27
+P1013,Clothing,363.4,116.0,summer,23,113.97
+P1014,Clothing,195.46,115.0,winter,12,109.21
+P1015,Electronics,481.25,68.0,summer,46,118.47
+P1016,Electronics,229.09,127.0,festival,37,145.4
+P1017,Electronics,158.53,132.0,summer,29,125.01
+P1018,Clothing,316.64,119.0,winter,7,117.68
+P1019,Home Decor,251.04,42.0,summer,16,59.35
+P1020,Beauty,,,festival,22,85.73
+P1021,Clothing,393.11,24.0,winter,4,53.04
+P1022,Groceries,139.35,97.0,winter,48,153.58
+P1023,Electronics,448.91,93.0,festival,7,96.58
+P1024,Groceries,365.68,55.0,,47,100.99
+P1025,Beauty,280.99,94.0,summer,18,90.25
+P1026,Electronics,261.41,153.0,summer,46,168.55
+P1027,Electronics,496.25,36.0,winter,45,79.57
+P1028,Groceries,387.83,90.0,summer,17,118.03
+P1029,Home Decor,468.91,152.0,summer,12,99.89
+P1030,Beauty,438.28,40.0,winter,2,40.43
+P1031,Electronics,78.8,150.0,winter,0,130.77
+P1032,Toys,349.58,32.0,winter,39,84.36
+P1033,Home Decor,72.48,77.0,festival,6,103.65
+P1034,Groceries,478.17,85.0,festival,26,138.38
+P1035,Electronics,60.1,119.0,festival,7,140.42
+P1036,Electronics,237.95,150.0,festival,32,148.97
+P1037,Beauty,122.46,63.0,festival,27,134.07
+P1038,Electronics,217.53,74.0,winter,5,98.37
+P1039,Home Decor,375.04,136.0,summer,41,132.64
+P1040,Clothing,160.68,36.0,festival,47,135.51
+P1041,Groceries,64.82,93.0,summer,1,98.93
+P1042,Clothing,201.67,100.0,festival,42,142.47
+P1043,Electronics,97.3,143.0,summer,12,126.23
+P1044,Electronics,265.69,22.0,winter,45,107.28
+P1045,Groceries,423.04,131.0,summer,46,157.74
+P1046,Home Decor,74.2,108.0,festival,42,135.82
+P1047,Home Decor,322.67,51.0,winter,13,71.47
+P1048,Home Decor,188.27,48.0,winter,37,93.95
+P1049,Electronics,458.84,138.0,festival,24,143.33
+P1050,Clothing,270.1,109.0,festival,39,132.54
+P1051,Home Decor,431.47,148.0,festival,6,147.38
+P1052,Home Decor,75.6,27.0,festival,48,132.1
+P1053,Toys,473.45,28.0,festival,12,78.09
+P1054,Groceries,237.26,96.0,winter,34,148.51
+P1055,Home Decor,466.17,137.0,winter,6,114.89
+P1056,Beauty,338.25,75.0,festival,37,128.21
+P1057,Clothing,162.7,60.0,winter,8,72.34
+P1058,Beauty,280.07,70.0,festival,48,141.55
+P1059,Toys,361.14,137.0,festival,48,148.53
+P1060,Groceries,345.56,32.0,winter,27,69.22
+P1061,Groceries,225.62,16.0,winter,15,60.68
+P1062,Clothing,147.68,159.0,festival,39,166.13
+P1063,Toys,52.5,113.0,festival,45,154.79
+P1064,Toys,456.03,127.0,summer,14,118.79
+P1065,Home Decor,402.33,154.0,festival,12,151.99
+P1066,Toys,351.48,149.0,festival,41,172.38
+P1067,Toys,426.76,80.0,festival,7,96.2
+P1068,Groceries,308.88,117.0,festival,25,152.13
+P1069,Groceries,93.18,68.0,festival,4,100.04
+P1070,Home Decor,289.63,128.0,festival,22,133.42
+P1071,Groceries,327.42,79.0,festival,47,137.18
+P1072,Toys,73.97,83.0,summer,48,132.89
+P1073,Electronics,210.61,37.0,festival,20,73.51
+P1074,Toys,241.27,20.0,winter,7,52.98
+P1075,Electronics,329.0,104.0,festival,16,105.92
+P1076,Home Decor,260.27,105.0,winter,41,136.01
+P1077,Beauty,401.54,50.0,winter,16,79.67
+P1078,Groceries,35.34,25.0,festival,3,94.57
+P1079,Electronics,15.22,78.0,festival,42,158.31
+P1080,Electronics,187.54,102.0,summer,25,111.19
+P1081,Toys,355.06,124.0,festival,19,148.29
+P1082,Beauty,89.63,91.0,summer,21,108.93
+P1083,Toys,77.67,87.0,festival,22,130.84
+P1084,Groceries,82.13,77.0,winter,15,105.84
+P1085,Electronics,249.18,159.0,summer,29,134.32
+P1086,Toys,327.38,137.0,festival,20,143.66
+P1087,Beauty,174.52,150.0,winter,43,179.39
+P1088,Clothing,296.86,88.0,festival,6,99.41
+P1089,Toys,204.09,159.0,summer,46,182.33
+P1090,Electronics,464.31,42.0,summer,35,65.69
+P1091,Clothing,353.89,91.0,summer,32,127.69
+P1092,Toys,362.58,125.0,festival,14,128.24
+P1093,Toys,224.52,109.0,festival,28,127.14
+P1094,Groceries,376.99,56.0,festival,32,112.11
+P1095,Clothing,492.89,139.0,winter,23,130.5
+P1096,Home Decor,402.61,27.0,winter,13,52.06
+P1097,Toys,61.77,150.0,summer,34,156.15
+P1098,Beauty,32.09,122.0,festival,46,176.38
+P1099,Electronics,341.23,91.0,winter,1,82.37
+P1100,Electronics,179.23,49.0,festival,39,106.09
+P1101,Toys,444.19,140.0,summer,9,96.88
+P1102,Clothing,153.81,132.0,festival,39,146.22
+P1103,Clothing,458.33,46.0,winter,25,67.86
+P1104,Clothing,231.01,44.0,summer,49,91.27
+P1105,Home Decor,274.1,157.0,festival,14,139.31
+P1106,Toys,373.22,146.0,winter,10,115.9
+P1107,Home Decor,84.48,65.0,summer,44,114.22
+P1108,Home Decor,242.32,128.0,winter,48,150.28
+P1109,Toys,99.11,39.0,festival,28,97.15
+P1110,Beauty,25.63,89.0,winter,47,115.37
+P1111,Toys,231.92,53.0,summer,26,82.43
+P1112,Home Decor,351.51,70.0,summer,22,87.59
+P1113,Electronics,63.14,75.0,summer,44,98.86
+P1114,Groceries,392.05,63.0,winter,23,78.01
+P1115,Toys,344.16,63.0,winter,11,61.08
+P1116,Clothing,82.02,81.0,festival,30,129.07
+P1117,Groceries,23.39,37.0,summer,5,88.23
+P1118,Electronics,10.33,100.0,festival,14,124.63
+P1119,Toys,133.1,51.0,festival,46,143.07
+P1120,Groceries,164.65,67.0,festival,27,135.84
+P1121,Beauty,46.43,139.0,summer,1,115.47
+P1122,Home Decor,371.38,120.0,festival,42,155.76
+P1123,Electronics,349.0,23.0,summer,8,32.5
+P1124,Toys,295.64,17.0,festival,19,73.37
+P1125,Groceries,142.41,119.0,festival,2,136.32
+P1126,Toys,301.09,136.0,summer,7,109.76
+P1127,Electronics,202.91,123.0,winter,34,139.36
+P1128,Beauty,261.17,157.0,winter,48,174.22
+P1129,Groceries,445.71,110.0,summer,20,110.88
+P1130,Electronics,430.62,40.0,summer,50,65.44
+P1131,Toys,194.49,74.0,festival,26,124.69
+P1132,Toys,452.75,97.0,summer,35,136.19
+P1133,Toys,19.38,45.0,festival,49,132.11
+P1134,Home Decor,307.5,72.0,summer,29,87.65
+P1135,Home Decor,104.8,64.0,winter,19,99.85
+P1136,Electronics,477.81,114.0,summer,37,99.13
+P1137,Electronics,107.43,156.0,summer,9,128.81
+P1138,Groceries,479.99,21.0,winter,12,66.36
+P1139,Home Decor,384.28,58.0,summer,44,89.17
+P1140,Clothing,75.79,153.0,summer,48,165.4
+P1141,Electronics,274.84,90.0,festival,8,112.26
+P1142,Clothing,153.65,99.0,festival,43,149.37
+P1143,Clothing,471.24,74.0,summer,6,80.18
+P1144,Electronics,211.48,137.0,summer,3,113.3
+P1145,Clothing,174.95,92.0,festival,27,129.59
+P1146,Groceries,390.46,151.0,festival,16,152.21
+P1147,Home Decor,72.82,67.0,winter,6,101.72
+P1148,Groceries,110.2,38.0,winter,8,84.38
+P1149,Electronics,307.2,25.0,summer,23,60.68
+P1150,Toys,372.87,,festival,18,127.5
+P1151,Clothing,176.46,23.0,summer,40,94.94
+P1152,Beauty,223.49,45.0,festival,14,76.72
+P1153,Home Decor,233.46,130.0,summer,6,105.65
+P1154,Groceries,365.28,148.0,summer,36,156.49
+P1155,Clothing,176.62,,festival,9,120.5
+P1156,Toys,376.81,80.0,festival,14,105.49
+P1157,Toys,188.24,121.0,festival,37,160.6
+P1158,Home Decor,214.3,88.0,festival,9,110.82
+P1159,Home Decor,53.13,62.0,summer,34,112.95
+P1160,Toys,390.85,62.0,summer,47,95.6
+P1161,Toys,76.22,55.0,summer,14,89.24
+P1162,Toys,476.84,93.0,festival,29,119.04
+P1163,Home Decor,204.64,78.0,festival,34,116.93
+P1164,Toys,468.48,103.0,winter,43,125.84
+P1165,Toys,172.38,132.0,festival,12,130.79
+P1166,Toys,384.22,156.0,festival,11,152.15
+P1167,Beauty,150.35,59.0,festival,13,112.16
+P1168,Home Decor,90.51,133.0,festival,18,154.62
+P1169,Groceries,388.97,102.0,summer,5,76.38
+P1170,Toys,312.88,37.0,winter,44,117.36
+P1171,Toys,141.15,84.0,festival,45,142.24
+P1172,Home Decor,279.67,40.0,winter,12,60.57
+P1173,Home Decor,,30.0,festival,4,70.32
+P1174,Electronics,,81.0,winter,18,93.81
+P1175,Beauty,213.0,72.0,festival,16,95.85
+P1176,Electronics,440.5,144.0,summer,46,122.76
+P1177,Groceries,8.26,27.0,summer,22,92.05
+P1178,Beauty,80.26,134.0,summer,3,111.22
+P1179,Toys,202.08,94.0,summer,37,114.94
+P1180,Home Decor,189.01,,winter,20,124.9
+P1181,Electronics,94.74,38.0,summer,8,73.42
+P1182,Toys,228.77,34.0,festival,46,101.42
+P1183,Clothing,116.63,83.0,summer,33,106.81
+P1184,Beauty,357.58,94.0,festival,23,93.73
+P1185,Groceries,213.98,52.0,summer,38,116.81
+P1186,Beauty,162.86,54.0,winter,22,98.52
+P1187,Home Decor,448.1,127.0,summer,32,116.42
+P1188,Beauty,37.27,84.0,festival,17,117.18
+P1189,Electronics,56.79,75.0,summer,10,87.76
+P1190,Home Decor,185.49,139.0,summer,12,128.5
+P1191,Groceries,445.08,19.0,summer,47,69.94
+P1192,Clothing,427.37,104.0,summer,49,145.8
+P1193,Beauty,205.42,24.0,summer,16,69.95
+P1194,Toys,253.33,39.0,festival,27,110.27
+P1195,Clothing,71.0,109.0,winter,16,134.72
+P1196,Groceries,209.07,100.0,winter,22,108.34
+P1197,Clothing,170.0,54.0,winter,23,101.03
+P1198,Clothing,178.1,95.0,summer,3,103.69
+P1199,Clothing,113.55,128.0,winter,28,145.14
+P1200,Toys,337.12,149.0,winter,50,183.57
+P1201,Groceries,10.27,104.0,winter,1,115.97
+P1202,Clothing,252.24,122.0,festival,10,112.03
+P1203,Clothing,191.55,138.0,festival,28,155.6
+P1204,Groceries,482.98,87.0,winter,3,84.75
+P1205,Toys,192.24,32.0,festival,5,75.13
+P1206,Home Decor,217.09,157.0,festival,47,189.67
+P1207,Clothing,147.92,117.0,festival,15,147.11
+P1208,Home Decor,88.39,82.0,festival,31,130.25
+P1209,Beauty,264.95,150.0,winter,10,114.87
+P1210,Electronics,207.26,29.0,festival,11,86.29
+P1211,Beauty,320.04,67.0,,21,104.59
+P1212,Clothing,27.88,159.0,,10,158.14
+P1213,Beauty,420.04,147.0,festival,5,120.13
+P1214,Beauty,287.18,92.0,festival,36,124.02
+P1215,Clothing,101.17,89.0,summer,14,121.3
+P1216,Groceries,488.14,117.0,festival,31,160.77
+P1217,Toys,275.4,154.0,winter,45,153.53
+P1218,Clothing,185.91,81.0,winter,9,101.73
+P1219,Clothing,465.9,136.0,winter,31,118.54
+P1220,Electronics,261.75,156.0,summer,33,154.71
+P1221,Toys,39.16,36.0,summer,9,77.42
+P1222,Home Decor,401.89,105.0,summer,44,133.18
+P1223,Home Decor,119.16,74.0,summer,22,103.02
+P1224,Groceries,165.8,93.0,summer,9,113.87
+P1225,Home Decor,91.09,118.0,festival,47,146.79
+P1226,Home Decor,222.84,90.0,winter,14,94.06
+P1227,Toys,299.73,49.0,summer,11,93.71
+P1228,Groceries,241.98,83.0,festival,36,142.35
+P1229,Groceries,321.86,42.0,winter,43,117.09
+P1230,Beauty,190.49,112.0,festival,30,138.4
+P1231,Clothing,114.02,101.0,winter,38,134.48
+P1232,Groceries,142.11,123.0,festival,28,183.6
+P1233,Groceries,268.46,42.0,summer,45,105.1
+P1234,Beauty,80.53,66.0,winter,19,95.21
+P1235,Electronics,42.41,76.0,festival,24,130.7
+P1236,Electronics,126.45,79.0,festival,17,112.39
+P1237,Clothing,377.88,40.0,summer,16,74.39
+P1238,Beauty,124.11,58.0,winter,27,106.53
+P1239,Beauty,499.42,83.0,festival,31,104.83
+P1240,Clothing,15.78,81.0,summer,29,123.13
+P1241,Clothing,419.61,158.0,winter,5,102.35
+P1242,Beauty,445.83,159.0,festival,8,148.54
+P1243,Electronics,177.56,159.0,festival,28,150.66
+P1244,Beauty,206.22,23.0,festival,3,75.98
+P1245,Toys,138.24,148.0,festival,46,163.46
+P1246,Clothing,482.54,49.0,summer,28,77.06
+P1247,Electronics,387.75,98.0,festival,19,119.19
+P1248,Home Decor,27.01,97.0,festival,10,115.93
+P1249,Electronics,375.56,37.0,winter,18,62.41
+P1250,Clothing,323.99,84.0,festival,37,146.1
+P1251,Beauty,128.97,158.0,festival,37,197.17
+P1252,Groceries,236.2,44.0,summer,12,71.46
+P1253,Electronics,142.87,32.0,summer,12,60.2
+P1254,Toys,204.4,47.0,festival,13,93.64
+P1255,Groceries,459.36,104.0,summer,43,147.18
+P1256,Toys,312.51,140.0,summer,27,131.08
+P1257,Beauty,225.08,23.0,festival,44,108.27
+P1258,Groceries,65.98,123.0,,50,177.45
+P1259,Electronics,395.15,154.0,winter,46,140.22
+P1260,Electronics,399.25,90.0,summer,23,104.36
+P1261,Toys,322.01,110.0,winter,24,134.13
+P1262,Home Decor,395.59,141.0,summer,30,132.45
+P1263,Clothing,173.73,49.0,festival,30,111.14
+P1264,Clothing,285.25,46.0,festival,30,95.46
+P1265,Clothing,203.05,75.0,summer,48,109.37
+P1266,Home Decor,443.77,140.0,festival,15,140.67
+P1267,Electronics,21.37,64.0,summer,48,109.33
+P1268,Toys,229.17,,winter,3,83.36
+P1269,Home Decor,292.68,33.0,summer,7,42.47
+P1270,Beauty,112.19,63.0,summer,6,94.9
+P1271,Groceries,73.21,91.0,summer,42,143.34
+P1272,Clothing,264.89,142.0,festival,47,166.14
+P1273,Beauty,399.91,128.0,summer,13,111.83
+P1274,Beauty,429.35,62.0,festival,44,134.75
+P1275,Groceries,455.62,,festival,15,89.43
+P1276,Electronics,314.78,105.0,,47,143.1
+P1277,Groceries,227.84,22.0,summer,20,64.43
+P1278,Beauty,416.24,122.0,summer,23,129.02
+P1279,Home Decor,464.56,149.0,festival,25,151.16
+P1280,Groceries,244.94,25.0,winter,26,95.44
+P1281,Toys,97.0,76.0,winter,11,101.41
+P1282,Clothing,23.82,126.0,festival,10,137.85
+P1283,Home Decor,168.51,72.0,festival,32,103.09
+P1284,Electronics,380.0,146.0,winter,25,145.32
+P1285,Toys,137.33,107.0,summer,29,135.39
+P1286,Clothing,467.0,107.0,festival,16,113.06
+P1287,Electronics,492.93,80.0,winter,50,118.18
+P1288,Groceries,283.9,61.0,winter,8,99.72
+P1289,Home Decor,170.69,91.0,summer,6,74.07
+P1290,Groceries,280.56,48.0,festival,9,97.36
+P1291,Groceries,39.95,16.0,summer,2,72.01
+P1292,Groceries,226.79,37.0,festival,34,104.03
+P1293,Clothing,95.87,101.0,summer,46,154.3
+P1294,Beauty,302.92,,festival,48,171.16
+P1295,Toys,118.41,121.0,winter,2,113.42
+P1296,Electronics,308.32,78.0,festival,32,126.84
+P1297,Beauty,304.88,115.0,winter,12,96.99
+P1298,Groceries,,75.0,summer,28,85.56
+P1299,Toys,476.35,88.0,festival,0,78.49
+P1300,Electronics,46.45,155.0,winter,3,126.71
+P1301,Toys,83.56,111.0,winter,37,119.69
+P1302,Home Decor,161.61,83.0,winter,47,145.25
+P1303,Toys,,101.0,summer,48,159.5
+P1304,Home Decor,126.92,69.0,festival,30,120.36
+P1305,Home Decor,82.09,80.0,festival,4,97.59
+P1306,Clothing,148.28,83.0,festival,26,126.54
+P1307,Clothing,476.86,51.0,winter,33,66.91
+P1308,Electronics,346.27,35.0,summer,6,48.23
+P1309,Groceries,264.76,53.0,winter,14,72.42
+P1310,Electronics,14.78,109.0,summer,23,117.13
+P1311,Electronics,268.98,44.0,winter,30,70.46
+P1312,Toys,393.15,76.0,summer,42,94.85
+P1313,Toys,395.48,87.0,summer,32,99.21
+P1314,Clothing,80.2,79.0,winter,40,137.8
+P1315,Clothing,167.36,15.0,festival,24,96.06
+P1316,Beauty,256.0,152.0,summer,2,110.04
+P1317,Groceries,135.35,142.0,festival,25,177.92
+P1318,Clothing,269.12,139.0,winter,46,152.49
+P1319,Toys,106.49,118.0,winter,34,139.97
+P1320,Home Decor,360.64,66.0,summer,23,78.48
+P1321,Clothing,450.84,77.0,summer,17,87.24
+P1322,Toys,72.33,,festival,15,100.7
+P1323,Beauty,496.46,85.0,festival,17,92.06
+P1324,Beauty,14.95,40.0,festival,3,74.84
+P1325,Toys,142.76,134.0,summer,1,114.63
+P1326,Clothing,169.34,70.0,summer,16,92.42
+P1327,Groceries,464.83,21.0,festival,25,91.51
+P1328,Groceries,448.59,125.0,festival,8,125.45
+P1329,Clothing,54.42,149.0,festival,50,198.46
+P1330,Groceries,401.22,19.0,festival,40,118.71
+P1331,Home Decor,28.89,110.0,winter,22,123.89
+P1332,Groceries,,142.0,summer,46,142.19
+P1333,Clothing,255.32,22.0,summer,7,54.97
+P1334,Clothing,485.13,134.0,summer,0,84.0
+P1335,Beauty,91.63,47.0,winter,41,112.31
+P1336,Toys,362.75,31.0,winter,13,54.22
+P1337,Groceries,135.21,25.0,winter,33,90.6
+P1338,Electronics,297.12,41.0,summer,17,60.18
+P1339,Beauty,,60.0,festival,44,130.85
+P1340,Toys,474.17,31.0,festival,17,69.22
+P1341,Electronics,450.0,139.0,summer,12,119.74
+P1342,Groceries,330.49,109.0,summer,22,119.74
+P1343,Groceries,165.52,151.0,summer,18,140.58
+P1344,Clothing,197.87,68.0,summer,9,79.25
+P1345,Electronics,270.68,159.0,summer,39,156.19
+P1346,Electronics,398.49,90.0,festival,17,105.75
+P1347,Groceries,53.65,79.0,winter,28,120.77
+P1348,Groceries,317.44,119.0,festival,47,159.94
+P1349,Home Decor,281.65,117.0,summer,11,106.03
+P1350,Groceries,354.26,42.0,summer,15,61.36
+P1351,Electronics,151.82,43.0,summer,49,117.12
+P1352,Home Decor,366.41,58.0,summer,31,63.04
+P1353,Groceries,240.05,49.0,festival,24,113.59
+P1354,Home Decor,449.88,77.0,winter,31,89.81
+P1355,Toys,149.44,54.0,winter,8,79.13
+P1356,Toys,206.41,19.0,summer,38,62.45
+P1357,Groceries,290.23,75.0,summer,25,116.12
+P1358,Electronics,347.36,35.0,winter,10,41.54
+P1359,Toys,42.02,89.0,summer,37,131.89
+P1360,Toys,51.75,140.0,festival,15,126.14
+P1361,Groceries,217.71,56.0,winter,40,128.88
+P1362,Clothing,33.46,36.0,festival,14,103.86
+P1363,Clothing,213.94,23.0,summer,18,77.58
+P1364,Beauty,187.6,59.0,summer,2,68.98
+P1365,Groceries,425.05,29.0,festival,12,80.57
+P1366,Electronics,30.08,125.0,festival,17,136.07
+P1367,Beauty,13.38,59.0,winter,30,115.18
+P1368,Home Decor,301.45,32.0,winter,11,46.29
+P1369,Beauty,281.49,123.0,summer,15,116.12
+P1370,Toys,272.42,156.0,winter,46,158.46
+P1371,Clothing,466.28,125.0,summer,6,102.57
+P1372,Groceries,41.76,145.0,festival,2,148.88
+P1373,Beauty,296.4,82.0,festival,16,89.05
+P1374,Electronics,380.01,111.0,winter,19,109.4
+P1375,Toys,289.21,23.0,winter,2,54.14
+P1376,Clothing,323.64,110.0,festival,14,116.21
+P1377,Beauty,142.39,137.0,summer,26,134.85
+P1378,Clothing,369.14,100.0,summer,45,123.48
+P1379,Beauty,433.14,20.0,winter,36,72.97
+P1380,Beauty,191.7,35.0,summer,46,89.21
+P1381,Toys,409.34,139.0,summer,19,107.98
+P1382,Electronics,,73.0,summer,47,107.06
+P1383,Toys,253.31,43.0,festival,1,75.67
+P1384,Beauty,470.65,55.0,summer,33,86.62
+P1385,Toys,66.77,51.0,winter,4,77.38
+P1386,Groceries,113.84,47.0,winter,17,98.11
+P1387,Groceries,82.29,154.0,festival,46,208.22
+P1388,Home Decor,347.72,104.0,festival,26,131.47
+P1389,Groceries,14.1,132.0,,25,168.0
+P1390,Beauty,192.64,51.0,winter,2,64.7
+P1391,Toys,253.65,30.0,winter,32,107.77
+P1392,Toys,236.15,18.0,summer,44,100.09
+P1393,Groceries,305.14,61.0,winter,20,99.1
+P1394,Groceries,282.33,159.0,summer,32,149.87
+P1395,Beauty,430.61,149.0,festival,6,123.6
+P1396,Clothing,9.92,26.0,summer,30,98.12
+P1397,Clothing,385.69,107.0,winter,45,141.04
+P1398,Beauty,208.17,147.0,summer,47,171.47
+P1399,Toys,378.7,86.0,winter,1,63.22
+P1400,Beauty,444.23,111.0,winter,46,123.32
+P1401,Beauty,105.16,69.0,winter,43,131.76
+P1402,Toys,466.46,154.0,summer,45,132.07
+P1403,Home Decor,126.73,159.0,summer,4,123.43
+P1404,Beauty,236.49,90.0,winter,31,134.81
+P1405,Electronics,,56.0,,44,117.02
+P1406,Toys,424.4,130.0,festival,3,95.49
+P1407,Toys,464.06,45.0,winter,20,76.81
+P1408,Electronics,201.89,136.0,winter,28,132.9
+P1409,Electronics,290.81,71.0,summer,23,85.26
+P1410,Clothing,254.48,83.0,winter,6,84.2
+P1411,Clothing,,54.0,festival,7,94.93
+P1412,Clothing,133.52,49.0,festival,24,116.9
+P1413,Home Decor,438.43,40.0,festival,8,75.97
+P1414,Toys,270.11,141.0,festival,1,136.63
+P1415,Clothing,121.13,66.0,festival,8,93.01
+P1416,Electronics,431.4,51.0,summer,49,84.97
+P1417,Electronics,260.05,148.0,winter,41,148.92
+P1418,Electronics,75.24,122.0,festival,8,127.47
+P1419,Clothing,172.37,95.0,winter,13,115.13
+P1420,Electronics,53.81,117.0,winter,15,126.72
+P1421,Toys,109.49,127.0,festival,9,149.66
+P1422,Groceries,47.75,119.0,festival,28,174.57
+P1423,Toys,266.35,78.0,festival,33,129.97
+P1424,Groceries,227.07,25.0,festival,4,74.92
+P1425,Beauty,444.61,37.0,festival,2,62.3
+P1426,Home Decor,74.53,89.0,summer,24,114.94
+P1427,Groceries,348.41,49.0,summer,35,88.68
+P1428,Home Decor,372.0,136.0,summer,11,107.94
+P1429,Toys,342.31,124.0,winter,39,145.34
+P1430,Clothing,128.42,101.0,summer,32,131.19
+P1431,Electronics,437.63,45.0,summer,35,63.39
+P1432,Home Decor,221.83,55.0,winter,5,75.4
+P1433,Toys,490.53,149.0,festival,37,156.51
+P1434,Home Decor,230.0,121.0,summer,27,124.12
+P1435,Clothing,141.07,90.0,festival,18,122.53
+P1436,Home Decor,111.04,78.0,summer,18,97.08
+P1437,Home Decor,195.08,55.0,winter,21,93.37
+P1438,Electronics,220.39,151.0,festival,10,137.56
+P1439,Beauty,59.29,75.0,summer,21,90.66
+P1440,Electronics,313.76,149.0,summer,45,136.11
+P1441,Clothing,143.09,35.0,,20,79.02
+P1442,Electronics,169.9,28.0,winter,23,80.67
+P1443,Home Decor,70.41,43.0,summer,7,57.07
+P1444,Home Decor,487.45,158.0,summer,20,124.65
+P1445,Electronics,81.42,76.0,festival,50,149.86
+P1446,Home Decor,287.36,23.0,festival,31,87.13
+P1447,Beauty,84.25,134.0,winter,12,129.0
+P1448,Beauty,87.23,159.0,summer,6,135.74
+P1449,Beauty,,64.0,winter,35,126.84
+P1450,Beauty,240.12,142.0,festival,37,158.7
+P1451,Electronics,117.46,33.0,festival,41,106.25
+P1452,Groceries,479.19,62.0,festival,33,100.39
+P1453,Toys,,43.0,festival,17,87.81
+P1454,Home Decor,299.35,155.0,summer,5,114.12
+P1455,Electronics,98.19,52.0,winter,23,105.25
+P1456,Toys,329.72,88.0,festival,34,108.61
+P1457,Beauty,56.96,119.0,summer,30,136.55
+P1458,Toys,308.32,94.0,summer,30,125.88
+P1459,Beauty,240.66,134.0,,33,141.38
+P1460,Home Decor,128.47,135.0,winter,14,117.93
+P1461,Beauty,47.12,124.0,summer,38,143.79
+P1462,Clothing,356.8,116.0,summer,39,122.36
+P1463,Toys,241.33,31.0,festival,29,99.35
+P1464,Toys,193.97,139.0,festival,23,136.36
+P1465,Beauty,355.4,119.0,festival,31,134.88
+P1466,Toys,384.24,70.0,festival,22,91.25
+P1467,Clothing,459.98,129.0,festival,12,134.13
+P1468,Groceries,251.8,128.0,festival,23,152.1
+P1469,Home Decor,225.42,35.0,winter,12,67.15
+P1470,Toys,,74.0,summer,3,65.56
+P1471,Clothing,435.59,16.0,festival,46,98.42
+P1472,Beauty,64.04,53.0,summer,12,90.71
+P1473,Home Decor,231.18,123.0,,27,122.14
+P1474,Electronics,237.03,138.0,festival,45,156.03
+P1475,Groceries,104.15,22.0,festival,48,137.72
+P1476,Home Decor,99.85,,festival,1,84.58
+P1477,Toys,230.04,83.0,festival,32,122.07
+P1478,Toys,171.53,54.0,summer,40,100.35
+P1479,Electronics,71.41,105.0,winter,35,140.61
+P1480,Home Decor,362.91,29.0,summer,25,73.86
+P1481,Beauty,157.24,101.0,winter,8,117.59
+P1482,Clothing,358.16,107.0,festival,7,105.96
+P1483,Toys,68.9,72.0,winter,9,93.2
+P1484,Beauty,491.26,147.0,summer,6,107.17
+P1485,Toys,55.33,24.0,festival,9,91.21
+P1486,Home Decor,492.42,112.0,,24,111.28
+P1487,Beauty,257.56,105.0,summer,47,121.35
+P1488,Groceries,365.69,23.0,summer,7,50.58
+P1489,Toys,280.29,85.0,summer,35,122.51
+P1490,Home Decor,466.44,28.0,summer,27,58.83
+P1491,Beauty,213.02,27.0,festival,0,60.29
+P1492,Home Decor,397.0,65.0,festival,49,101.26
+P1493,Home Decor,146.05,25.0,summer,16,58.36
+P1494,Electronics,405.45,115.0,summer,50,113.93
+P1495,Beauty,63.16,34.0,winter,26,85.63
+P1496,Clothing,182.76,153.0,summer,36,161.17
+P1497,Electronics,64.5,142.0,summer,28,139.3
+P1498,Electronics,280.08,83.0,festival,21,107.69
+P1499,Electronics,159.9,54.0,summer,28,76.74
+P1500,Electronics,174.64,25.0,winter,3,40.84
+P1501,Electronics,480.16,60.0,summer,30,70.76
+P1502,Home Decor,270.41,133.0,winter,7,113.23
+P1503,Electronics,54.36,38.0,summer,9,72.94
+P1504,Groceries,181.55,28.0,winter,31,105.98
+P1505,Beauty,380.1,153.0,festival,25,154.2
+P1506,Clothing,499.71,61.0,summer,4,64.34
+P1507,Beauty,43.21,,winter,47,132.67
+P1508,Clothing,370.83,57.0,summer,44,97.58
+P1509,Groceries,356.18,,winter,40,97.47
+P1510,Groceries,117.73,138.0,winter,3,129.63
+P1511,Toys,180.86,63.0,winter,26,113.2
+P1512,Electronics,85.54,64.0,festival,9,90.23
+P1513,Groceries,388.73,62.0,winter,20,85.52
+P1514,Groceries,183.31,,winter,28,105.6
+P1515,Home Decor,178.34,54.0,summer,29,90.97
+P1516,Home Decor,74.44,115.0,festival,18,148.09
+P1517,Clothing,257.57,120.0,summer,21,125.81
+P1518,Electronics,434.21,153.0,summer,24,123.47
+P1519,Toys,472.71,90.0,winter,22,111.69
+P1520,Electronics,372.3,156.0,summer,44,142.85
+P1521,Toys,41.86,91.0,festival,42,154.0
+P1522,Beauty,,132.0,winter,44,148.21
+P1523,Home Decor,34.76,83.0,winter,15,101.33
+P1524,Beauty,431.5,23.0,festival,25,81.82
+P1525,Clothing,50.49,141.0,,44,176.72
+P1526,Electronics,129.97,95.0,festival,38,144.95
+P1527,Groceries,301.35,60.0,summer,13,77.66
+P1528,Groceries,342.1,142.0,summer,35,127.36
+P1529,Beauty,8.49,19.0,winter,1,53.44
+P1530,Electronics,397.59,145.0,summer,13,126.36
+P1531,Clothing,398.17,25.0,festival,31,75.12
+P1532,Beauty,279.75,78.0,winter,23,87.32
+P1533,Clothing,466.6,57.0,festival,28,81.8
+P1534,Toys,376.87,96.0,festival,11,113.86
+P1535,Beauty,308.13,68.0,festival,6,86.77
+P1536,Clothing,211.7,71.0,festival,49,134.71
+P1537,Home Decor,252.31,77.0,winter,41,139.75
+P1538,Home Decor,485.86,117.0,festival,22,124.55
+P1539,Toys,384.57,91.0,winter,26,120.52
+P1540,Beauty,61.42,88.0,winter,47,147.28
+P1541,Groceries,240.95,15.0,summer,8,66.12
+P1542,Beauty,157.36,100.0,summer,17,93.46
+P1543,Toys,239.71,76.0,summer,24,95.24
+P1544,Clothing,177.27,140.0,winter,7,114.25
+P1545,Home Decor,314.36,77.0,festival,26,110.3
+P1546,Toys,407.6,41.0,festival,40,98.97
+P1547,Toys,77.1,48.0,festival,15,103.29
+P1548,Groceries,,133.0,summer,7,107.24
+P1549,Groceries,458.25,145.0,festival,40,162.83
+P1550,Clothing,169.41,57.0,festival,11,108.77
+P1551,Beauty,442.36,60.0,festival,48,121.13
+P1552,Groceries,468.29,87.0,summer,39,105.32
+P1553,Groceries,330.78,72.0,summer,16,98.55
+P1554,Home Decor,86.59,115.0,winter,42,156.98
+P1555,Electronics,419.07,73.0,winter,34,93.5
+P1556,Toys,60.34,108.0,summer,38,136.65
+P1557,Toys,412.49,25.0,summer,11,47.67
+P1558,Beauty,94.82,19.0,festival,22,91.96
+P1559,Groceries,430.72,125.0,summer,15,122.37
+P1560,Beauty,86.0,61.0,summer,45,114.79
+P1561,Clothing,445.89,50.0,festival,34,115.91
+P1562,Clothing,291.3,33.0,winter,45,100.69
+P1563,Clothing,440.13,69.0,festival,16,98.3
+P1564,Groceries,217.45,121.0,summer,37,162.34
+P1565,Clothing,310.65,65.0,festival,19,108.59
+P1566,Beauty,216.4,93.0,festival,14,101.77
+P1567,Electronics,344.68,93.0,winter,3,86.1
+P1568,Beauty,434.86,78.0,festival,9,79.7
+P1569,Beauty,367.29,74.0,festival,40,132.37
+P1570,Home Decor,220.23,89.0,festival,36,121.77
+P1571,Beauty,380.4,93.0,festival,47,160.69
+P1572,Toys,133.47,39.0,festival,24,112.51
+P1573,Beauty,429.4,131.0,summer,26,107.41
+P1574,Toys,106.53,,summer,43,161.88
+P1575,Groceries,177.16,84.0,winter,13,108.47
+P1576,Groceries,51.49,158.0,summer,15,148.98
+P1577,Electronics,333.73,57.0,summer,32,87.89
+P1578,Home Decor,249.72,133.0,festival,25,119.36
+P1579,Beauty,419.37,55.0,summer,47,81.45
+P1580,Electronics,179.71,154.0,summer,31,140.35
+P1581,Beauty,284.67,32.0,summer,33,83.28
+P1582,Groceries,109.66,54.0,summer,3,86.36
+P1583,Electronics,317.76,104.0,festival,47,151.25
+P1584,Toys,220.0,96.0,summer,15,109.08
+P1585,Clothing,386.11,75.0,festival,32,140.16
+P1586,Clothing,169.3,94.0,summer,40,155.97
+P1587,Toys,239.33,,winter,14,78.65
+P1588,Beauty,,130.0,summer,43,140.51
+P1589,Home Decor,355.08,89.0,festival,12,103.63
+P1590,Toys,305.1,68.0,winter,13,94.95
+P1591,Electronics,239.22,132.0,summer,1,94.93
+P1592,Home Decor,134.63,61.0,winter,8,75.3
+P1593,Home Decor,66.98,99.0,summer,50,156.05
+P1594,Groceries,361.0,17.0,winter,26,78.1
+P1595,Toys,425.9,135.0,festival,47,156.53
+P1596,Clothing,462.91,89.0,winter,48,121.57
+P1597,Home Decor,78.53,121.0,summer,41,159.34
+P1598,Groceries,277.13,132.0,festival,35,174.8
+P1599,Beauty,202.79,40.0,winter,15,77.41
+P1600,Beauty,434.49,77.0,summer,8,90.29
+P1601,Clothing,415.69,29.0,winter,7,44.09
+P1602,Electronics,252.57,88.0,summer,3,97.26
+P1603,Electronics,43.94,149.0,summer,9,123.84
+P1604,Electronics,52.84,142.0,summer,44,144.27
+P1605,Toys,359.74,31.0,festival,3,58.97
+P1606,Beauty,163.24,30.0,winter,26,78.71
+P1607,Groceries,253.0,111.0,summer,8,102.91
+P1608,Home Decor,104.91,36.0,winter,29,88.63
+P1609,Groceries,328.69,68.0,winter,4,70.54
+P1610,Groceries,116.3,68.0,summer,6,84.79
+P1611,Clothing,47.69,136.0,winter,16,127.87
+P1612,Toys,96.73,80.0,summer,32,131.61
+P1613,Beauty,98.6,24.0,winter,25,74.02
+P1614,Electronics,465.45,53.0,summer,28,71.62
+P1615,Groceries,51.17,62.0,winter,36,113.61
+P1616,Clothing,473.87,145.0,festival,22,148.07
+P1617,Home Decor,182.69,126.0,winter,32,145.15
+P1618,Home Decor,194.39,60.0,festival,2,81.45
+P1619,Beauty,244.44,90.0,festival,13,119.82
+P1620,Groceries,337.17,119.0,festival,9,132.82
+P1621,Home Decor,477.08,32.0,summer,20,37.47
+P1622,Beauty,66.44,38.0,winter,6,66.46
+P1623,Beauty,201.29,73.0,summer,33,110.38
+P1624,Beauty,290.4,73.0,festival,2,93.53
+P1625,Groceries,160.35,82.0,festival,27,136.3
+P1626,Groceries,57.67,25.0,summer,38,113.17
+P1627,Beauty,298.81,36.0,summer,31,73.24
+P1628,Home Decor,158.47,110.0,winter,15,123.25
+P1629,Toys,263.14,60.0,festival,16,98.15
+P1630,Clothing,298.04,126.0,summer,18,112.04
+P1631,Toys,444.42,73.0,festival,19,116.79
+P1632,Beauty,455.04,84.0,festival,32,117.87
+P1633,Beauty,18.02,33.0,winter,25,96.12
+P1634,Home Decor,24.47,71.0,winter,2,91.17
+P1635,Clothing,222.06,26.0,festival,21,92.44
+P1636,Clothing,11.11,83.0,winter,20,108.89
+P1637,Toys,145.87,91.0,winter,43,115.62
+P1638,Beauty,271.95,17.0,winter,32,61.55
+P1639,Clothing,396.21,33.0,summer,28,65.23
+P1640,Beauty,70.67,145.0,festival,44,186.01
+P1641,Beauty,,39.0,,3,51.81
+P1642,Toys,,95.0,festival,50,137.74
+P1643,Home Decor,108.88,25.0,summer,41,92.19
+P1644,Toys,38.32,123.0,summer,27,128.47
+P1645,Clothing,63.83,96.0,winter,28,131.3
+P1646,Electronics,97.41,156.0,festival,15,151.93
+P1647,Groceries,304.78,143.0,festival,8,137.46
+P1648,Beauty,388.31,19.0,festival,36,109.88
+P1649,Groceries,393.24,157.0,festival,42,193.91
+P1650,Clothing,18.23,53.0,festival,49,146.64
+P1651,Electronics,269.13,17.0,summer,43,62.14
+P1652,Home Decor,479.91,153.0,summer,37,116.14
+P1653,Toys,216.07,87.0,winter,41,127.43
+P1654,Beauty,28.7,140.0,summer,25,159.71
+P1655,Clothing,,33.0,summer,31,79.78
+P1656,Toys,497.19,146.0,summer,46,136.26
+P1657,Home Decor,406.31,74.0,winter,20,86.42
+P1658,Electronics,359.22,114.0,winter,9,105.97
+P1659,Toys,177.37,126.0,winter,47,166.39
+P1660,Electronics,9.51,52.0,festival,22,127.43
+P1661,Home Decor,413.53,146.0,winter,28,139.15
+P1662,Toys,372.79,94.0,summer,19,114.05
+P1663,Toys,241.24,18.0,summer,42,81.42
+P1664,Beauty,70.69,89.0,festival,0,99.61
+P1665,Groceries,384.89,80.0,festival,44,127.93
+P1666,Toys,33.56,24.0,festival,25,110.32
+P1667,Toys,372.91,117.0,winter,12,114.12
+P1668,Toys,241.86,122.0,summer,39,134.09
+P1669,Home Decor,259.92,27.0,summer,8,70.03
+P1670,Beauty,20.9,43.0,,48,138.87
+P1671,Home Decor,458.32,87.0,festival,15,83.77
+P1672,Home Decor,263.31,44.0,festival,12,91.76
+P1673,Home Decor,85.25,,festival,39,174.08
+P1674,Home Decor,301.01,54.0,winter,28,83.49
+P1675,Toys,33.72,118.0,winter,37,145.05
+P1676,Toys,259.25,17.0,summer,14,75.12
+P1677,Electronics,194.6,,winter,9,92.51
+P1678,Toys,417.03,59.0,festival,5,89.56
+P1679,Clothing,153.82,65.0,summer,15,87.82
+P1680,Beauty,,147.0,summer,34,148.03
+P1681,Clothing,487.04,102.0,festival,33,121.63
+P1682,Beauty,30.11,36.0,winter,35,98.03
+P1683,Beauty,94.06,140.0,festival,7,121.19
+P1684,Toys,145.08,49.0,festival,0,78.28
+P1685,Home Decor,125.02,108.0,winter,42,153.57
+P1686,Toys,433.31,129.0,summer,31,143.43
+P1687,Electronics,266.26,140.0,winter,43,170.84
+P1688,Groceries,251.0,66.0,winter,11,97.6
+P1689,Toys,234.51,16.0,festival,6,78.95
+P1690,Clothing,297.78,124.0,summer,39,164.71
+P1691,Home Decor,220.16,140.0,summer,15,136.95
+P1692,Home Decor,426.48,75.0,festival,20,88.14
+P1693,Beauty,278.97,112.0,summer,39,110.88
+P1694,Home Decor,335.78,87.0,summer,21,96.9
+P1695,Toys,,114.0,summer,25,92.62
+P1696,Electronics,147.61,51.0,festival,11,105.02
+P1697,Groceries,375.08,139.0,summer,39,167.7
+P1698,Home Decor,142.93,158.0,,44,154.5
+P1699,Beauty,280.45,148.0,summer,29,127.76
+P1700,Beauty,101.8,67.0,festival,15,99.09
+P1701,Beauty,396.98,152.0,festival,43,177.49
+P1702,Groceries,324.73,88.0,festival,9,101.76
+P1703,Toys,111.98,34.0,summer,49,99.64
+P1704,Groceries,462.12,72.0,festival,32,104.57
+P1705,Toys,115.16,119.0,festival,5,133.44
+P1706,Groceries,166.98,112.0,winter,28,127.9
+P1707,Electronics,113.96,108.0,winter,47,133.85
+P1708,Home Decor,,105.0,festival,24,139.23
+P1709,Electronics,141.47,117.0,summer,33,129.12
+P1710,Electronics,106.73,40.0,summer,6,66.9
+P1711,Groceries,459.85,42.0,festival,10,71.77
+P1712,Home Decor,69.23,131.0,summer,33,142.7
+P1713,Clothing,,56.0,winter,34,135.82
+P1714,Clothing,406.96,98.0,winter,47,152.85
+P1715,Clothing,25.18,139.0,summer,14,114.28
+P1716,Clothing,,34.0,summer,36,76.24
+P1717,Toys,179.15,18.0,festival,14,77.36
+P1718,Groceries,365.69,83.0,summer,40,115.24
+P1719,Toys,266.26,143.0,winter,39,153.27
+P1720,Toys,154.09,69.0,summer,41,123.32
+P1721,Groceries,451.38,,festival,28,122.37
+P1722,Groceries,227.82,88.0,summer,9,106.71
+P1723,Home Decor,403.7,51.0,summer,13,58.15
+P1724,Clothing,124.44,147.0,summer,45,163.67
+P1725,Toys,322.06,100.0,summer,10,82.83
+P1726,Home Decor,226.04,25.0,summer,29,73.71
+P1727,Home Decor,187.14,43.0,winter,24,86.2
+P1728,Home Decor,466.6,158.0,summer,16,108.96
+P1729,Home Decor,142.06,92.0,winter,33,130.61
+P1730,Groceries,10.17,108.0,winter,0,111.5
+P1731,Clothing,143.63,126.0,summer,33,142.12
+P1732,Electronics,435.06,99.0,festival,8,102.05
+P1733,Electronics,16.28,124.0,winter,13,136.4
+P1734,Toys,422.58,42.0,winter,28,79.76
+P1735,Beauty,408.87,155.0,winter,37,154.65
+P1736,Clothing,343.04,98.0,winter,44,145.15
+P1737,Home Decor,254.3,159.0,summer,27,142.73
+P1738,Clothing,210.35,111.0,festival,15,131.91
+P1739,Clothing,300.06,29.0,festival,15,85.43
+P1740,Beauty,13.29,134.0,summer,41,146.4
+P1741,Groceries,219.1,54.0,summer,20,90.62
+P1742,Clothing,107.23,34.0,festival,18,95.86
+P1743,Beauty,235.82,114.0,festival,32,136.35
+P1744,Groceries,389.39,143.0,summer,43,134.34
+P1745,Home Decor,320.58,65.0,winter,22,76.74
+P1746,Beauty,117.18,90.0,winter,29,123.31
+P1747,Beauty,304.51,66.0,winter,17,72.98
+P1748,Groceries,499.86,115.0,winter,16,109.2
+P1749,Electronics,244.61,23.0,festival,11,60.7
+P1750,Beauty,96.5,87.0,summer,45,136.96
+P1751,Toys,343.78,81.0,summer,11,79.96
+P1752,Toys,408.93,151.0,summer,19,115.47
+P1753,Beauty,87.19,120.0,winter,14,124.81
+P1754,Toys,360.6,46.0,winter,18,72.82
+P1755,Electronics,318.47,108.0,summer,7,83.56
+P1756,Home Decor,34.25,42.0,festival,12,102.71
+P1757,Home Decor,393.28,131.0,,33,130.03
+P1758,Home Decor,120.07,49.0,festival,47,130.86
+P1759,Electronics,86.1,116.0,festival,8,116.99
+P1760,Clothing,164.58,16.0,winter,29,81.24
+P1761,Groceries,437.42,148.0,summer,29,127.85
+P1762,Beauty,456.05,132.0,festival,39,155.89
+P1763,Electronics,319.49,95.0,summer,9,93.05
+P1764,Clothing,182.84,138.0,festival,33,169.9
+P1765,Home Decor,310.69,64.0,winter,11,69.02
+P1766,Toys,388.82,21.0,winter,35,92.73
+P1767,Home Decor,108.55,155.0,winter,37,157.96
+P1768,Beauty,223.22,85.0,festival,30,128.57
+P1769,Toys,307.73,129.0,festival,22,132.16
+P1770,Groceries,30.84,16.0,festival,39,122.08
+P1771,Home Decor,443.18,152.0,summer,38,147.68
+P1772,Home Decor,499.45,72.0,summer,30,110.56
+P1773,Electronics,215.47,85.0,summer,28,90.02
+P1774,Groceries,304.5,94.0,winter,25,115.97
+P1775,Groceries,461.59,56.0,summer,26,93.47
+P1776,Electronics,177.07,87.0,summer,11,93.85
+P1777,Clothing,81.56,30.0,winter,17,81.25
+P1778,Clothing,467.07,75.0,summer,4,61.32
+P1779,Clothing,210.82,17.0,summer,38,59.71
+P1780,Groceries,324.58,95.0,festival,30,146.58
+P1781,Beauty,310.29,122.0,summer,42,143.11
+P1782,Home Decor,92.5,88.0,festival,21,120.07
+P1783,Home Decor,303.92,132.0,festival,39,137.21
+P1784,Home Decor,280.71,59.0,winter,40,81.65
+P1785,Home Decor,488.48,41.0,festival,15,63.32
+P1786,Clothing,35.25,141.0,winter,11,128.68
+P1787,Groceries,164.93,123.0,winter,47,154.65
+P1788,Beauty,144.19,85.0,festival,2,109.08
+P1789,Home Decor,9.83,75.0,summer,16,93.42
+P1790,Toys,69.82,158.0,festival,44,177.16
+P1791,Clothing,69.08,142.0,festival,16,166.1
+P1792,Toys,31.86,21.0,summer,12,62.04
+P1793,Electronics,197.38,100.0,festival,0,98.73
+P1794,Electronics,448.3,18.0,winter,15,52.91
+P1795,Home Decor,441.13,30.0,festival,49,103.31
+P1796,Electronics,92.7,93.0,summer,42,129.35
+P1797,Electronics,465.5,37.0,summer,3,26.63
+P1798,Groceries,207.13,154.0,festival,29,174.9
+P1799,Clothing,58.37,65.0,summer,28,115.81
+P1800,Beauty,10.19,79.0,summer,18,99.8
+P1801,Electronics,207.27,125.0,winter,36,158.54
+P1802,Beauty,76.24,78.0,winter,49,121.53
+P1803,Electronics,258.62,75.0,festival,10,99.47
+P1804,Home Decor,403.58,24.0,,22,53.59
+P1805,Beauty,103.45,158.0,winter,33,166.22
+P1806,Toys,169.32,68.0,summer,45,124.34
+P1807,Toys,414.01,138.0,festival,43,162.61
+P1808,Toys,367.85,119.0,summer,38,115.35
+P1809,Toys,63.24,40.0,summer,40,91.33
+P1810,Beauty,432.43,63.0,winter,20,74.56
+P1811,Beauty,137.05,135.0,summer,4,108.74
+P1812,Home Decor,319.06,63.0,summer,1,66.85
+P1813,Toys,,156.0,winter,17,150.85
+P1814,Home Decor,208.19,20.0,festival,38,77.35
+P1815,Electronics,79.47,92.0,summer,7,82.48
+P1816,Groceries,373.34,64.0,festival,14,103.51
+P1817,Electronics,335.6,54.0,festival,42,102.05
+P1818,Home Decor,154.68,140.0,winter,19,139.25
+P1819,Groceries,457.3,75.0,summer,38,105.75
+P1820,Electronics,213.0,149.0,winter,33,146.95
+P1821,Clothing,450.89,84.0,summer,45,134.54
+P1822,Groceries,79.51,135.0,summer,24,143.32
+P1823,Toys,133.77,121.0,festival,36,157.15
+P1824,Beauty,100.96,116.0,festival,13,144.74
+P1825,Electronics,465.65,45.0,winter,28,44.09
+P1826,Groceries,161.59,,winter,15,108.57
+P1827,Electronics,197.03,121.0,summer,7,88.47
+P1828,Groceries,410.51,38.0,summer,45,102.08
+P1829,Electronics,238.52,63.0,festival,1,104.43
+P1830,Toys,394.44,70.0,winter,1,61.05
+P1831,Groceries,464.5,36.0,festival,30,96.09
+P1832,Electronics,53.19,76.0,festival,25,114.84
+P1833,Beauty,407.44,38.0,summer,41,82.01
+P1834,Electronics,272.4,134.0,winter,33,143.1
+P1835,Clothing,466.37,104.0,summer,27,100.36
+P1836,Groceries,62.46,24.0,festival,2,94.49
+P1837,Groceries,77.57,150.0,festival,26,164.08
+P1838,Home Decor,343.98,151.0,summer,2,116.56
+P1839,Groceries,20.76,27.0,festival,0,85.39
+P1840,Electronics,78.44,147.0,festival,31,173.18
+P1841,Clothing,167.12,81.0,summer,43,122.04
+P1842,Electronics,92.23,18.0,summer,32,66.28
+P1843,Home Decor,394.7,38.0,winter,30,72.31
+P1844,Beauty,,62.0,summer,31,97.93
+P1845,Electronics,130.78,46.0,winter,21,93.69
+P1846,Toys,477.65,59.0,summer,45,82.29
+P1847,Beauty,421.09,69.0,summer,38,77.25
+P1848,Beauty,278.42,15.0,festival,0,61.65
+P1849,Home Decor,313.86,126.0,festival,34,138.76
+P1850,Electronics,333.75,65.0,summer,14,67.05
+P1851,Toys,465.28,52.0,summer,18,61.58
+P1852,Beauty,84.83,50.0,festival,37,135.62
+P1853,Electronics,432.46,138.0,winter,16,94.46
+P1854,Electronics,351.54,138.0,festival,27,148.97
+P1855,Clothing,287.78,25.0,festival,15,82.19
+P1856,Home Decor,12.64,129.0,winter,46,171.57
+P1857,Home Decor,241.7,157.0,winter,27,132.42
+P1858,Home Decor,36.32,94.0,winter,24,127.4
+P1859,Home Decor,149.15,149.0,festival,33,177.76
+P1860,Groceries,41.82,136.0,festival,32,153.75
+P1861,Clothing,306.99,64.0,summer,37,120.77
+P1862,Electronics,215.0,76.0,summer,7,74.13
+P1863,Groceries,31.67,41.0,festival,28,121.73
+P1864,Groceries,119.95,69.0,festival,39,129.72
+P1865,Home Decor,226.89,121.0,festival,30,149.08
+P1866,Beauty,73.56,147.0,festival,39,175.86
+P1867,Beauty,111.29,158.0,summer,35,155.36
+P1868,Beauty,435.47,135.0,festival,34,149.92
+P1869,Clothing,292.41,56.0,summer,38,100.28
+P1870,Toys,214.92,40.0,winter,42,95.23
+P1871,Groceries,276.46,27.0,festival,5,84.83
+P1872,Electronics,428.21,32.0,festival,30,86.8
+P1873,Groceries,271.86,27.0,,21,98.34
+P1874,Home Decor,278.84,104.0,festival,16,128.27
+P1875,Toys,498.4,33.0,festival,5,47.46
+P1876,Electronics,401.82,24.0,festival,39,98.33
+P1877,Toys,143.55,101.0,summer,45,138.03
+P1878,Clothing,336.67,153.0,festival,3,128.99
+P1879,Toys,449.3,67.0,festival,34,102.97
+P1880,Clothing,26.11,155.0,festival,38,197.19
+P1881,Clothing,78.29,123.0,festival,25,162.02
+P1882,Electronics,466.46,147.0,festival,41,139.4
+P1883,Clothing,375.17,133.0,winter,40,163.93
+P1884,Electronics,356.25,47.0,summer,34,106.17
+P1885,Home Decor,236.78,33.0,festival,44,99.9
+P1886,Toys,235.81,133.0,festival,38,155.26
+P1887,Beauty,315.73,110.0,festival,26,132.85
+P1888,Toys,382.06,75.0,festival,37,121.28
+P1889,Home Decor,38.78,63.0,festival,38,127.59
+P1890,Home Decor,398.55,118.0,winter,12,100.77
+P1891,Electronics,424.0,84.0,festival,36,117.48
+P1892,Clothing,266.49,114.0,summer,26,145.01
+P1893,Beauty,278.34,48.0,festival,4,86.97
+P1894,Groceries,171.75,43.0,winter,31,108.12
+P1895,Electronics,115.98,117.0,festival,5,106.89
+P1896,Groceries,29.32,18.0,summer,31,101.16
+P1897,Beauty,304.01,97.0,summer,1,73.81
+P1898,Home Decor,360.05,63.0,festival,6,74.59
+P1899,Groceries,84.24,26.0,summer,8,77.23

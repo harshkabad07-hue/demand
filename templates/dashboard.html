@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demand Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-page="dashboard">
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="{{ url_for('home') }}">Retail Demand AI</a>
+            <nav class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('prediction_page') }}">Prediction</a>
+                <a class="active" href="{{ url_for('dashboard_page') }}">Dashboard</a>
+            </nav>
+        </header>
+
+        <main class="dashboard-grid">
+            <section class="panel reveal">
+                <div class="section-heading">
+                    <span class="eyebrow">Visual Analytics</span>
+                    <h1>Retail Demand Dashboard</h1>
+                </div>
+                <canvas id="salesDemandChart"></canvas>
+            </section>
+
+            <section class="panel reveal delay-1">
+                <div class="section-heading">
+                    <span class="eyebrow">Seasonal View</span>
+                    <h2>Average Demand by Season</h2>
+                </div>
+                <canvas id="seasonChart"></canvas>
+            </section>
+
+            <section class="panel metric-panel reveal delay-2">
+                <div class="section-heading">
+                    <span class="eyebrow">Model Metrics</span>
+                    <h2>Performance Snapshot</h2>
+                </div>
+                <div id="metrics-grid" class="metrics-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

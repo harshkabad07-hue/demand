@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Product Demand Prediction System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-page="home">
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="{{ url_for('home') }}">Retail Demand AI</a>
+            <nav class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('prediction_page') }}">Prediction</a>
+                <a href="{{ url_for('dashboard_page') }}">Dashboard</a>
+            </nav>
+        </header>
+
+        <main class="hero-grid">
+            <section class="hero-card reveal">
+                <span class="eyebrow">Predictive Analytics for Retail</span>
+                <h1>Retail Product Demand Prediction System</h1>
+                <p>
+                    Forecast product demand using historical sales patterns, seasonality, and promotional discounts.
+                    This beginner-friendly project helps retailers make smarter inventory decisions with machine learning.
+                </p>
+                <div class="hero-actions">
+                    <a class="primary-btn" href="{{ url_for('prediction_page') }}">Predict Demand</a>
+                    <a class="secondary-btn" href="{{ url_for('dashboard_page') }}">View Dashboard</a>
+                </div>
+            </section>
+
+            <section class="info-stack reveal delay-1">
+                <article class="glass-card">
+                    <h2>What It Uses</h2>
+                    <ul class="feature-list">
+                        <li>Random Forest Regressor for demand forecasting</li>
+                        <li>Flask API for real-time prediction</li>
+                        <li>Chart.js dashboard for simple business insights</li>
+                    </ul>
+                </article>
+                <article class="glass-card accent-card">
+                    <h2>Why It Helps</h2>
+                    <p>
+                        Reduce stockouts, avoid overstocking, and understand how price, discount, and season influence demand.
+                    </p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
