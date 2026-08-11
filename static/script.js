@@ -1,3 +1,23 @@
+function setupCitySelect() {
+    const stateSelect = document.getElementById("state-select");
+    const citySelect = document.getElementById("city-select");
+    const cityDataElement = document.getElementById("city-data");
+
+    if (!stateSelect || !citySelect || !cityDataElement) {
+        return;
+    }
+
+    const cityData = JSON.parse(cityDataElement.textContent);
+
+    const syncCities = () => {
+        const cities = cityData[stateSelect.value] || [];
+        citySelect.innerHTML = cities.map((city) => `<option value="${city}">${city}</option>`).join("");
+    };
+
+    stateSelect.addEventListener("change", syncCities);
+    syncCities();
+}
+
 function setDiscountLabel() {
     const discountInput = document.getElementById("discount-input");
     const discountValue = document.getElementById("discount-value");
@@ -17,12 +37,19 @@ function setDiscountLabel() {
 function renderPredictionResult(result) {
     const resultCard = document.getElementById("result-card");
     const badgeClass = result.demand_level.toLowerCase();
+    const riskClass = result.inventory_status.toLowerCase().replaceAll(" ", "-");
 
     resultCard.innerHTML = `
-        <p class="muted">Predicted product demand</p>
-        <div class="prediction-number">${result.predicted_demand}</div>
-        <span class="badge ${badgeClass}">${result.demand_level} Demand</span>
-        <p class="muted">This prediction combines category, price, historical sales, season, and discount impact.</p>
+        <p class="muted">Forecasted demand for the selected Indian retail context</p>
+        <div class="prediction-number">${result.predicted_demand} units</div>
+        <div class="result-actions">
+            <span class="badge ${badgeClass}">${result.demand_level} Demand</span>
+            <span class="badge ${riskClass}">${result.inventory_status}</span>
+        </div>
+        <div class="recommendation-box">
+            <span class="muted">Recommended reorder quantity</span>
+            <strong>${result.recommended_reorder_qty} units</strong>
+        </div>
     `;
 }
 
@@ -96,10 +123,10 @@ function renderMetrics(metrics) {
     }
 
     const cards = [
-        { label: "RF MAE", value: metrics.random_forest.mae.toFixed(2) },
-        { label: "RF RMSE", value: metrics.random_forest.rmse.toFixed(2) },
-        { label: "LR MAE", value: metrics.linear_regression.mae.toFixed(2) },
-        { label: "LR RMSE", value: metrics.linear_regression.rmse.toFixed(2) },
+        { label: "Random Forest MAE", value: metrics.random_forest.mae.toFixed(2) },
+        { label: "Random Forest RMSE", value: metrics.random_forest.rmse.toFixed(2) },
+        { label: "Random Forest R2", value: metrics.random_forest.r2.toFixed(3) },
+        { label: "Linear Regression RMSE", value: metrics.linear_regression.rmse.toFixed(2) },
     ];
 
     metricsGrid.innerHTML = cards
@@ -114,9 +141,64 @@ function renderMetrics(metrics) {
         .join("");
 }
 
+function renderKpis(kpis) {
+    const kpiGrid = document.getElementById("kpi-grid");
+    if (!kpiGrid) {
+        return;
+    }
+
+    const cards = [
+        { label: "Dataset Rows", value: kpis.records.toLocaleString("en-IN") },
+        { label: "Avg Demand", value: `${kpis.avg_demand} units` },
+        { label: "Avg Stock", value: `${kpis.avg_stock} units` },
+        { label: "Indian Regions", value: kpis.states },
+    ];
+
+    kpiGrid.innerHTML = cards
+        .map(
+            (card) => `
+                <div class="metric-card">
+                    <span class="muted">${card.label}</span>
+                    <strong>${card.value}</strong>
+                </div>
+            `
+        )
+        .join("");
+}
+
+function makeChart(canvas, config) {
+    if (!canvas || typeof Chart === "undefined") {
+        return;
+    }
+
+    new Chart(canvas, {
+        ...config,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        boxWidth: 12,
+                        font: { family: "Manrope" },
+                    },
+                },
+            },
+            scales: config.type === "doughnut" ? undefined : {
+                x: { ticks: { maxRotation: 35, minRotation: 0 } },
+                y: { beginAtZero: true },
+            },
+            ...config.options,
+        },
+    });
+}
+
 function setupDashboard() {
     const salesCanvas = document.getElementById("salesDemandChart");
     const seasonCanvas = document.getElementById("seasonChart");
+    const stateCanvas = document.getElementById("stateChart");
+    const categoryCanvas = document.getElementById("categoryChart");
+    const inventoryCanvas = document.getElementById("inventoryChart");
 
     if (!salesCanvas || !seasonCanvas || typeof Chart === "undefined") {
         return;
@@ -125,34 +207,61 @@ function setupDashboard() {
     fetch("/dashboard-data")
         .then((response) => response.json())
         .then((data) => {
+            renderKpis(data.kpis);
             renderMetrics(data.metrics);
 
-            new Chart(salesCanvas, {
+            makeChart(salesCanvas, {
                 type: "bar",
                 data: {
                     labels: data.sales_vs_demand.labels,
                     datasets: [
                         {
-                            label: "Past Sales",
-                            data: data.sales_vs_demand.past_sales,
-                            backgroundColor: "rgba(15, 118, 110, 0.65)",
-                            borderRadius: 8,
+                            label: "Actual Demand",
+                            data: data.sales_vs_demand.demand,
+                            backgroundColor: "rgba(30, 64, 175, 0.72)",
+                            borderRadius: 6,
                         },
                         {
-                            label: "Demand",
-                            data: data.sales_vs_demand.demand,
-                            backgroundColor: "rgba(239, 108, 61, 0.72)",
+                            label: "Predicted Demand",
+                            data: data.sales_vs_demand.predicted_demand,
+                            backgroundColor: "rgba(217, 119, 6, 0.72)",
+                            borderRadius: 6,
+                        },
+                    ],
+                },
+            });
+
+            makeChart(stateCanvas, {
+                type: "bar",
+                data: {
+                    labels: data.state_demand.labels,
+                    datasets: [
+                        {
+                            label: "Total Demand",
+                            data: data.state_demand.demand,
+                            backgroundColor: "rgba(13, 148, 136, 0.75)",
                             borderRadius: 8,
                         },
                     ],
                 },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
+            });
+
+            makeChart(categoryCanvas, {
+                type: "bar",
+                data: {
+                    labels: data.category_revenue.labels,
+                    datasets: [
+                        {
+                            label: "Revenue in INR",
+                            data: data.category_revenue.revenue,
+                            backgroundColor: "rgba(190, 24, 93, 0.68)",
+                            borderRadius: 8,
+                        },
+                    ],
                 },
             });
 
-            new Chart(seasonCanvas, {
+            makeChart(seasonCanvas, {
                 type: "line",
                 data: {
                     labels: data.seasonal_trends.labels,
@@ -160,16 +269,29 @@ function setupDashboard() {
                         {
                             label: "Average Demand",
                             data: data.seasonal_trends.demand,
-                            borderColor: "#ef6c3d",
-                            backgroundColor: "rgba(239, 108, 61, 0.16)",
+                            borderColor: "#d97706",
+                            backgroundColor: "rgba(217, 119, 6, 0.16)",
                             fill: true,
                             tension: 0.35,
                         },
                     ],
                 },
+            });
+
+            makeChart(inventoryCanvas, {
+                type: "doughnut",
+                data: {
+                    labels: data.inventory_counts.labels,
+                    datasets: [
+                        {
+                            data: data.inventory_counts.counts,
+                            backgroundColor: ["#dc2626", "#0d9488", "#d97706"],
+                            borderWidth: 0,
+                        },
+                    ],
+                },
                 options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
+                    cutout: "58%",
                 },
             });
         })
@@ -182,6 +304,7 @@ function setupDashboard() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    setupCitySelect();
     setDiscountLabel();
     setupPredictionForm();
     setupDashboard();

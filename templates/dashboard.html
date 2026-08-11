@@ -12,7 +12,7 @@
 <body data-page="dashboard">
     <div class="page-shell">
         <header class="topbar">
-            <a class="brand" href="{{ url_for('home') }}">Retail Demand AI</a>
+            <a class="brand" href="{{ url_for('home') }}">India Retail Demand AI</a>
             <nav class="nav-links">
                 <a href="{{ url_for('home') }}">Home</a>
                 <a href="{{ url_for('prediction_page') }}">Prediction</a>
@@ -21,28 +21,53 @@
         </header>
 
         <main class="dashboard-grid">
-            <section class="panel reveal">
+            <section class="panel kpi-panel reveal">
                 <div class="section-heading">
-                    <span class="eyebrow">Visual Analytics</span>
-                    <h1>Retail Demand Dashboard</h1>
+                    <span class="eyebrow">Portfolio KPIs</span>
+                    <h1>India Retail Dashboard</h1>
                 </div>
-                <canvas id="salesDemandChart"></canvas>
+                <div id="kpi-grid" class="metrics-grid"></div>
             </section>
 
             <section class="panel reveal delay-1">
                 <div class="section-heading">
-                    <span class="eyebrow">Seasonal View</span>
+                    <span class="eyebrow">Forecast Accuracy</span>
+                    <h2>Actual vs Predicted Demand</h2>
+                </div>
+                <canvas id="salesDemandChart"></canvas>
+            </section>
+
+            <section class="panel reveal">
+                <div class="section-heading">
+                    <span class="eyebrow">Regional Demand</span>
+                    <h2>Demand by State</h2>
+                </div>
+                <canvas id="stateChart"></canvas>
+            </section>
+
+            <section class="panel reveal delay-1">
+                <div class="section-heading">
+                    <span class="eyebrow">Revenue Mix</span>
+                    <h2>Revenue by Category</h2>
+                </div>
+                <canvas id="categoryChart"></canvas>
+            </section>
+
+            <section class="panel reveal">
+                <div class="section-heading">
+                    <span class="eyebrow">Seasonality</span>
                     <h2>Average Demand by Season</h2>
                 </div>
                 <canvas id="seasonChart"></canvas>
             </section>
 
-            <section class="panel metric-panel reveal delay-2">
+            <section class="panel metric-panel reveal delay-1">
                 <div class="section-heading">
-                    <span class="eyebrow">Model Metrics</span>
-                    <h2>Performance Snapshot</h2>
+                    <span class="eyebrow">Inventory & Model</span>
+                    <h2>Risk and Performance</h2>
                 </div>
-                <div id="metrics-grid" class="metrics-grid"></div>
+                <canvas id="inventoryChart"></canvas>
+                <div id="metrics-grid" class="metrics-grid compact-metrics"></div>
             </section>
         </main>
     </div>

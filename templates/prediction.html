@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body data-page="prediction">
+    <script id="city-data" type="application/json">{{ cities_by_state | tojson }}</script>
     <div class="page-shell">
         <header class="topbar">
-            <a class="brand" href="{{ url_for('home') }}">Retail Demand AI</a>
+            <a class="brand" href="{{ url_for('home') }}">India Retail Demand AI</a>
             <nav class="nav-links">
                 <a href="{{ url_for('home') }}">Home</a>
                 <a class="active" href="{{ url_for('prediction_page') }}">Prediction</a>
@@ -24,7 +25,7 @@
             <section class="panel reveal">
                 <div class="section-heading">
                     <span class="eyebrow">Demand Estimator</span>
-                    <h1>Predict Future Demand</h1>
+                    <h1>Predict Store-Level Demand</h1>
                 </div>
                 <form id="prediction-form" class="prediction-form">
                     <label>
@@ -36,28 +37,74 @@
                         </select>
                     </label>
 
-                    <label>
-                        Price
-                        <input type="number" name="price" min="1" step="0.01" placeholder="Enter product price" required>
-                    </label>
+                    <div class="form-row">
+                        <label>
+                            State / Region
+                            <select id="state-select" name="state" required>
+                                {% for state in states %}
+                                <option value="{{ state }}">{{ state }}</option>
+                                {% endfor %}
+                            </select>
+                        </label>
+
+                        <label>
+                            City
+                            <select id="city-select" name="city" required></select>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            Store Format
+                            <select name="store_format" required>
+                                {% for format in store_formats %}
+                                <option value="{{ format }}">{{ format }}</option>
+                                {% endfor %}
+                            </select>
+                        </label>
+
+                        <label>
+                            Season
+                            <select name="season" required>
+                                {% for season in seasons %}
+                                <option value="{{ season }}">{{ season.title() }}</option>
+                                {% endfor %}
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            Price in INR
+                            <input type="number" name="price" min="1" step="0.01" placeholder="Example: 199" required>
+                        </label>
+
+                        <label>
+                            Past Sales Units
+                            <input type="number" name="past_sales" min="0" step="1" placeholder="Example: 120" required>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            Stock on Hand
+                            <input type="number" name="stock_on_hand" min="0" step="1" placeholder="Example: 95" required>
+                        </label>
+
+                        <label>
+                            Reorder Level
+                            <input type="number" name="reorder_level" min="0" step="1" placeholder="Example: 80" required>
+                        </label>
+                    </div>
 
                     <label>
-                        Past Sales
-                        <input type="number" name="past_sales" min="0" step="1" placeholder="Enter past sales" required>
-                    </label>
-
-                    <label>
-                        Season
-                        <select name="season" required>
-                            {% for season in seasons %}
-                            <option value="{{ season }}">{{ season.title() }}</option>
-                            {% endfor %}
-                        </select>
+                        Supplier Lead Time Days
+                        <input type="number" name="lead_time_days" min="1" max="30" step="1" value="6" required>
                     </label>
 
                     <label>
                         Discount: <span id="discount-value">10%</span>
-                        <input id="discount-input" type="range" name="discount" min="0" max="50" value="10">
+                        <input id="discount-input" type="range" name="discount" min="0" max="70" value="10">
                     </label>
 
                     <button class="primary-btn" type="submit">
@@ -70,10 +117,10 @@
             <aside class="panel result-panel reveal delay-1">
                 <div class="section-heading">
                     <span class="eyebrow">Prediction Result</span>
-                    <h2>Demand Insights</h2>
+                    <h2>Demand & Inventory Decision</h2>
                 </div>
                 <div id="result-card" class="result-card">
-                    <p class="muted">Submit the form to see the forecasted demand and demand level.</p>
+                    <p class="muted">Submit the form to see forecasted units, demand level, inventory risk, and reorder quantity.</p>
                 </div>
                 <div id="error-box" class="error-box hidden"></div>
             </aside>
